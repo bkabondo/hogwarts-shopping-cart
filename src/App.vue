@@ -159,8 +159,7 @@ function removeItem(id) {
 }
 let subtotal = computed(() =>
   shoppingCartItems.value.reduce(
-    (acc, item) => acc + item.price * item.quantity,
-    0
+    (acc, item) => acc + item.price * item.quantity, 0
   )
 )
 
