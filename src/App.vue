@@ -171,7 +171,6 @@ let total = computed(
   () => subtotal.value + shippingEstimate.value + taxEstimate.value
 )
 
-// Automatically save to localStorage whenever any part of shoppingCartItems changes
 watch(
   shoppingCartItems,
   () => {
@@ -185,7 +184,7 @@ watch(
 </script>
 
 <style scoped>
-/* Styles for the shopping cart */
+
 .shopping-cart {
   font-family: 'Arial', sans-serif;
   background-color: #f8f8f8;
